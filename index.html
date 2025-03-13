@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Header Section -->
@@ -22,19 +23,50 @@
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>I love to code in Luau and Python. I have made a Python package and a Windows application. I'm currently learning the basics of web development.</p>
+        <p>I love to code in Luau and Python. I have made a Python package and a Windows application. I'm currently learning the basics of web development. I'm starting to learn some Rust and back-end development.</p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-        <h2>My Projects</h2>
-        <p>This is a placeholder for your projects. In future chapters, you’ll add real projects here.</p>
+        <h2>My Favourite Projects</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                    <th>Source Code</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>AudioMorph</td>
+                    <td>An audio format converter application.</td>
+                    <td><a href="https://github.com/RinkyDinkyNooble/AudioMorph" target='_blank'>GitHub</a></td>
+                    <td><button class="project-button" id="AudioMorph-button" onclick="onShowPress('AudioMorph')">Show Details</button></td>
+                </tr>
+                
+                <tr>
+                    <td>ExtDict</td>
+                    <td>A python package that supports a new class with features lacking in built-in dictionaries.</td>
+                    <td><a href="https://github.com/RinkyDinkyNooble/extdict" target='_blank'>GitHub</a></td>
+                    <td><button class="project-button" id="ExtDict-button" onclick="onShowPress('ExtDict')">Show Details</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <p id="AudioMorph"></p>
+        <p id="ExtDict"></p>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>In the future, this will be a contact form. For now, just leave this as a placeholder.</p>
+        <form id="contactForm">
+            <label id="name">Name:<input type="text" id="name" name="name" required></label><br>
+            <label id="email">Email:<input type="email" id="email" name="email" required></label><br>
+            <label id="message">Message:<input type="text" id="message" name="message" required></label><br>
+            <button id="contact-button" type="submit">Submit</button><br><br><br><br>
+        </form>
     </section>
 
     <!-- Footer Section -->
