@@ -61,6 +61,29 @@ h2 {
     color: var(--primary-color);
 }
 
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.project-button{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.project-button:hover{
+    background-color: #004149;
+}
+
 @media only screen and (max-width: 600px) {
     header, footer {
         padding: 10px;
@@ -80,4 +103,50 @@ h2 {
     #contact{
         margin-bottom: 90px;
     }
+}
+
+
+#contactForm {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 1px;
+}
+  
+input {
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 2px;
+    background-color: white;
+    color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+input:valid {
+    border-color: green;
+    background-color: #e3fce3;
+}
+  
+input:invalid {
+    border-color: red;
+    background-color: #ffe0e0;
+}
+  
+#contact-button {
+    width: 104%;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 4px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-button:hover {
+    background-color: #004149;
 }
