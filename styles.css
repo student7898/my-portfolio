@@ -150,3 +150,8 @@ input:invalid {
 #contact-button:hover {
     background-color: #004149;
 }
+
+img{
+    border: #0083a3 3px solid;
+    border-radius: 10px;
+}
