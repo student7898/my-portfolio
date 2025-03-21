@@ -9,7 +9,10 @@ let projectDetails = {
         + "<a href='https://github.com/yt-dlp/yt-dlp' target='_blank'>Yt-Dlp</a>. "
         + "The UI was made using <a href='https://pypi.org/project/PyQt6' target='_blank'>PyQt6</a>. "
         + "The application is packaged using <a href='https://pypi.org/project/pyinstaller' target='_blank'>PyInstaller</a>.", 
-    "ExtDict": "<strong>ExtDict:</strong> I'm to lazy to add this right now. 0_0"
+    "ExtDict": "<strong>ExtDict:</strong> This project is a Python 3.13.1+ package that "
+        + "allows the user to create a dictionary with additional features such as "
+        + "read-only indices, minimum and maximum amount of key-value pair constraints, and methods to "
+        + "easily find values and keys based on certain properties."
 }
 function onShowPress(name) {
     projectDetailStatus[name] = !projectDetailStatus[name]
