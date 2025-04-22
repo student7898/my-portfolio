@@ -1,4 +1,4 @@
-let projectDetailStatus = {"AudioMorph": false, "ExtDict": false}
+let projectDetailStatus = {"AudioMorph": false, "ExtDict": false, "AMB": false}
 let projectDetails = {
     "AudioMorph": 
         "<strong>AudioMorph:</strong> This project is a Windows Application that allows the user to " 
@@ -12,7 +12,8 @@ let projectDetails = {
     "ExtDict": "<strong>ExtDict:</strong> This project is a Python 3.13.1+ package that "
         + "allows the user to create a dictionary with additional features such as "
         + "read-only indices, minimum and maximum amount of key-value pair constraints, and methods to "
-        + "easily find values and keys based on certain properties."
+        + "easily find values and keys based on certain properties.",
+    "AMB": "<strong>Anonymous Message Board:</strong> this project involved coding a backend in python using flask. It also involved signing up for and using a backend hosting service like render."
 }
 function onShowPress(name) {
     projectDetailStatus[name] = !projectDetailStatus[name]
